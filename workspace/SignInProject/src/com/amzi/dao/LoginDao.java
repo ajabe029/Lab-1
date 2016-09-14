@@ -22,7 +22,8 @@ public class LoginDao {
 			Class.forName(driver).newInstance();
 			conn = DriverManager
 					.getConnection(url + dbName, userName, password);
-
+			
+			// Prepared statement
 			pst = conn.prepareStatement("select * from login where user=? and password=?");
 			pst.setString(1, name);
 			pst.setString(2, pass);
