@@ -13,7 +13,7 @@
 <title>Welcome <%=session.getAttribute("name")%></title>
 </head>
 <body>
-	<div class="logo">Login successful!!! Welcome to the website! IT WORKS</div>
+	<div class="logo">Login successful!!! Welcome to the website! IT WORKS AGAIN</div>
 	<h4>
 		Hello,
 		<%=session.getAttribute("name")%></h4>
